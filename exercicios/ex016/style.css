@@ -1,0 +1,15 @@
+@charset "UTF-8"; /*ISSO É REGRA PRA NÃO TER PROBLEMA DE COMPATIBILIDADE DE CARACTER */
+/* Configurações Globais */
+*{ font-family:Arial, Helvetica, sans-serif ; } /* Familia da fonte   */
+p{text-align: justify;}
+
+body { background-image:linear-gradient(to bottom,#277d16, #6169FF) ;} 
+/* Border-radius => deixa os cantos das ciaxas mais arredondados   */
+/* Border-shadow => deixa uma sombra nas caixas de textos*/  
+main{background-color: white; width:  600px; padding: 10px; margin: auto; border-radius: 10px; box-shadow:5px 3px 15px rgba(0, 0, 0, 0.336) ;}
+main{font-weight: bold;} /* bold => deixa as letras em negrito */
+h1 {color:#A64D45; font-style: italic;} /*O texto fica com cor e italico */
+h1{ text-align: center; text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.336) ;} /*Deixa o texto alinhado e com sombra */
+
+/* Medidas Absoluta (cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica) */
+/* Medidas Relativas(em(tamanho atual da fonte), ex(altura x de uma fonte), rem, vw(tamanho da tela), vh(altura da tela), % */

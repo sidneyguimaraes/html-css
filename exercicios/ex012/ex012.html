@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/bola de tenis_45.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este vídeos está hospedado no meu próprio computador.</p>
+<!--FORMA MAIS SIMPLES DE COLOCAR O VÍDEO-->
+<!--    <video src="midia/passaros.mp4" width="500" controls ></video>  -->
+
+<!--FORMA MAIS SEGURA DE COLOCAR VÍDEO NA PÁGINA-->
+    <video width="400" height="300" poster="imagens/capa_de_cd.jpg" controls autoplay loop >  <!-- Colocar sempre os métodos dentro dos sinais de < >  -->
+        <source src="midia/passaros.mp4" type="video/mp4">
+        <source src="midia/Passaros.m4v" type="video/m4v">
+        <source src="midia/Passaros.webm" type="video/webm">
+        <p>Seu navegador não têm compatibilidade com a reprodução de vídeos</p>
+    </video>
+
+<!--INCORPORAÇÃO DE VÍDEOS EXTERNOS DE SITE CONHECIDOS-->
+    <h1>Inserindo vídeos fora do computador, pegando do youtube</h1>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <!--Este tipo de método de pegar videos externos, não consumirá dados do site quando for hospedado-->
+</body>
+</html>

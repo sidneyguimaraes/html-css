@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+<!-- quando colocar div existe uma hieraquia: primeiro div depois o <p> ex: div (pai) > p (filho)  -->
+
+<style>
+body{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    
+div > p {display: none;}
+
+div:hover{color: brown;}
+
+div:hover > p {display: block; color: white; background-color: rgb(13, 6, 68);width: 280px;}
+</style>
+
+</head>
+<body>
+        <h1>Exemplo de hover</h1>
+        <p>Passe o mouse em cima da frase</p>
+        <div>
+                Passe aqui!!
+                    <p>Você acabou de ganhar um prêmio!!!</p>
+        </div>
+        <p>Fim do exemplo</p>
+</body>
+</html>
