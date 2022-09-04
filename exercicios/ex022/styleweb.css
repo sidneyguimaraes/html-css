@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+body{
+    background-image:url(imagen/bola\ de\ tenis_150.png) ;
+    background-size: cover;
+    background-size: 1000px auto;
+   
+}

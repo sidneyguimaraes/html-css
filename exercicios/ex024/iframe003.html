@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+</head>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 95vw;
+            margin-left: 10px;
+            border: 1px solid black;
+            height: 400px;
+        }
+
+        frame{
+            text-align: center;
+        }
+     
+        .nav a{
+            text-decoration: none;
+        }
+    </style>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam amet, libero labore deserunt, aliquid ullam excepturi fuga perspiciatis asperiores beatae ex. Necessitatibus libero facilis perferendis maiores, fuga quam itaque illum?</p>
+
+        <ul class="nav">
+            <li><a href="../ex022/paginateste.html" target="frame">Primeira página</a></li>
+            <li><a href="../ex020/hover.html" target="frame">Segunda página</a></li>
+            <li><a href="../ex021/teste0002.html" target="frame">Terceira página</a></li>
+        </ul>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d75893.00356280243!2d-48.39884314113327!3d-1.3956754932863595!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1661733173718!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolorem voluptatum tenetur beatae alias! Doloribus repudiandae quaerat perferendis debitis architecto a quibusdam similique officia. Ut expedita reprehenderit officiis cum atque? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat cupiditate error possimus incidunt? Optio exercitationem eligendi architecto obcaecati repellat quis maiores libero tempora asperiores facilis sint, minima esse explicabo suscipit!</p>
+
+    <iframe name="frame" srcdoc="<h2> Gostaria de conhecer mais o nosso conteúdo</h2><p> Acesse agora a nossa página, curta, compartilhe, dê sua opinião</p><img src='imagen/bola_de_futsal_02.bmp'>">
+
+    </iframe> > <!--Colocando o name vc direciona a página pra dentro do frame-->
+                                  <!--Quando trocar o src por srcdoc, você pode colocar qualquer coisa do html (p, h, img..)-->
+        <p>Infelizmente seu navegador não é compatível com essa janela</p>
+
+    </iframe>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quibusdam est dolores similique nihil veritatis consectetur perspiciatis cumque exercitationem fugiat minus recusandae molestiae eveniet, suscipit natus voluptatum voluptas consequuntur adipisci. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptate tempora sint praesentium consequatur doloremque vitae eos qui incidunt consectetur obcaecati ut, totam ullam maxime quidem ab? Suscipit, eaque quis.</p>
+</body>
+</html>
