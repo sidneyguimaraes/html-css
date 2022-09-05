@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário &reg;</h1>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            
+            <fieldset>
+                
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>
+                       <label for="iemail">E-mail:</label> <input type="email" name="email" id="iemail" required autocomplete="email">
+                    </p>
+                    <p>
+                        <label for="ifone">Telefone</label>
+                        <input type="tel" name="fone" id="ifone" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                    </p>
+                        <!--input:radio (opção verdadeiro ou falso), tem que colocar o value é regra.
+                            checked (inicia com a marcação.)-->
+                    <p>
+                        <h3>Qual esporte vc pratica</h3>
+                        <input type="checkbox" name="tenis" id="itenis" checked><label for="itenis"> Tenis</label>
+                        <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label>
+                        <input type="checkbox" name="volei" id="ivolei"> <label for="ivolei">volei</label>
+                        <input type="checkbox" name="Handebol" id="ihandebol"> <label for="ihandebol">Handebol</label>
+                    </p>
+                </fieldset>
+
+            
+
+                <fieldset>
+
+                    <legend>Genero</legend>
+                        <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label><br>
+                        <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label> <br>
+                        <input type="radio" name="sexo" id="ioutros" value="Outros"><label for="ioutros">Outros</label> 
+                </fieldset>
+        
+                <fieldset>
+                    <legend>Escolha a cor</legend>
+                    <p>
+                        <!--input:color tem que colocar o valor (value) senão não funciona
+                            input:range tem que colocar o valor (value) senão não funciona-->
+                        <label for="icor">Tabela de cores:...</label><input type="color" name="cor" id="icor" value="#f00f87"> 
+                        <label for="satisfacao"> Nível de Satisfação</label>
+                        <input type="range" name="nivel" id="inivel" min="1" max="10" value="1">
+
+                    </p>
+
+                    <p>
+                        <label for="satisfacao"> Nível de Satisfação</label>
+                        <input type="range" name="nivel" id="inivel" min="1" max="10" value="1">
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Escolher a foto</legend>
+                    <label for="ifoto">Inserir foto:</label> <input type="file" name="foto" id="ifoto">
+
+                </fieldset>
+        
+                <!-- controle de outros botões-->
+
+                <fieldset>
+                    <legend>Estados do Brasil</legend>
+                        <p>
+                            <label for="iestado">Estados</label>
+                                <select name="estado" id="iestado">
+                                   <!--Colocando a opção escolha o estado-->
+                                        <option value="" selected>------Escolha--------</option>
+                                    <optgroup label="Região Sudeste">
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="MG">Minas Gerais</option>
+                                    </optgroup>
+                                    <optgroup label="Região Nordeste">
+                                        <option value="MA">Maranhão</option>
+                                        <option value="TO">Tocantins</option>
+                                        <option value="PA">Pará</option>
+                                    </optgroup>
+                        </p>
+                                </select>
+                            <!--Como digitar quando não está na lista de opções
+                                 tem que usar o datalist-->
+                <p>
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="prof" id="iprof" list="listprof">
+                        <datalist id="listprof">
+                            <option value="Administrador"></option>
+                            <option value="Educador Físico"></option>
+                            <option value="Técnico"></option>
+                        </datalist>
+                </p>
+
+                </fieldset>
+                
+                <!--Usando a opção de mensagnes-->
+
+                <fieldset>
+                        <legend>Dê a sua opinião</legend>
+                        <p>
+                            <label for="imens"></label>
+                            <textarea name="msg" id="imens" cols="30" rows="10" maxlength="300" placeholder="máximo de 300 caracters"></textarea>
+                        </p>
+
+                </fieldset>
+
+
+                <!--Exercicio 008 -->
+
+                <fieldset>
+                    <legend>Fazendo um formulário de soma</legend>
+                        
+                        <p>
+                            <label for="in1">Número 1:</label>
+                            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerhtml = Number(in1.value) + Number(in2.value)">
+                        </p>
+                    
+                        <p>
+                            <label for="in2">Número 2:</label>
+                            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerhtml=Number(in1.value) + Number(in2.value)" >
+                        </p>
+                    
+                        <p>
+                            <label for="isoma">A soma dos valores são:</label>
+                            <output name="soma" id="isoma">0</output>
+                        </p>
+                            <!--O exemplo acima não funcionou-->
+
+                        <p>
+                            <label for="inum">Número:</label>
+                                <input type="range" name="num" id="inum" min="0" max="10" value="5" oninput="ivalor.innerhtml = Number(inum.value)">
+                                <output id="ivalor">5</output>
+                            <!--O exemplo acima não funcionou-->
+
+                        </p>
+                </fieldset>
+
+
+                <p>
+                    <input type="submit" value="ENVIAR">
+                    <input type="reset" value="LIMPAR">
+                </p>
+
+            </fieldset>
+
+                
+
+
+
+
+
+
+        </form>
+
+        <!--Estudar mais sobre RegEx (expressões regulares)-->
+</body>
+</html>
