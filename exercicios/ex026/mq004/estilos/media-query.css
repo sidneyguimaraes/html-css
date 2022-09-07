@@ -13,11 +13,43 @@ Grandes Telas: acima de 1200px (atual 1280 +)
 
 /*Configuração para impressão*/
 @media print{
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{ /*desnecessário*/
+        background-image: url('../imagem/icon-print.png');
+    }
+
+    main{
+        border: 1px solid black;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after{
+        /*content => conteúdo*/
+        content: 'produzido por sidney guimarães';
+        width: 90vw;
+        text-decoration: overline;
+    }
+
+  
+    img#fone{display:none;}
+    img#tablet{display: none;}
+    img#impressao{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+
+
+
+
 
 
 }
 /*Configuração para Tablet*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 560px) and (max-width: 768px) {
     body{background-image: url('../imagem/back-tablet.jpg');
     }
 
@@ -36,8 +68,8 @@ Grandes Telas: acima de 1200px (atual 1280 +)
     img#fone {display:none;}
     img#tablet {display: none;}
     img#impressao {display: none;}
-    img#pc {display: none;}
-    img#tv {display: block;}
+    img#pc {display: block;}
+    img#tv {display: none;}
 
 
     }
@@ -47,6 +79,10 @@ Grandes Telas: acima de 1200px (atual 1280 +)
 @media screen and (min-width: 1280px) {
     body{
         background-image: url('../imagem/back-tv.jpg');
+    }
+
+    main{
+        width: 700px;
     }
 
     img#fone{display:none;}
