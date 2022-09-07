@@ -1,0 +1,79 @@
+@charset "UTF-08";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    
+    background-color: lightgray;
+}
+
+header h1{
+    padding: 10px;
+    text-align: center;
+}
+
+i#ihamburguer{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.562);
+}
+
+i#ihamburguer:hover{
+    color: blue;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.541);
+    cursor: pointer;
+}
+
+
+menu ul{
+    background-color: burlywood;
+    text-align: center;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+li{
+    display: block;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    
+    
+}
+li > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+li:hover{
+    background-color:   antiquewhite;
+    transition: .5s;
+}
+
+main{
+    background-color: white;
+    width: 80vw;
+    text-align: justify;
+    padding: 40px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+}
+
+main h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+article > p{
+    margin-bottom: 10px;
+    text-indent: 60px;
+    line-height: 25px;
+}
