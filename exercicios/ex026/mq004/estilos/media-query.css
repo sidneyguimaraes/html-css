@@ -1,0 +1,58 @@
+@charset "UTF-08";
+
+/*Todas as demais midias*/
+
+/* typical Device Breakpoint
+Pequenas telas: até 600px (atual 0-480px)
+Celular: de 600px até 768px (atual 481-768px)
+
+Tablet: 768px até 992px (atual 769-1279)
+Desktop: 992px até 1200px (atual 769-1279)
+Grandes Telas: acima de 1200px (atual 1280 +)
+*/
+
+/*Configuração para impressão*/
+@media print{
+
+
+}
+/*Configuração para Tablet*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body{background-image: url('../imagem/back-tablet.jpg');
+    }
+
+    img#fone{display:none;}
+    img#tablet{display: block;}
+    img#impressao{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+/*Configuração para pc*/
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    body{background-image: url('../imagem/back-pc.jpg');
+    }
+    
+    img#fone {display:none;}
+    img#tablet {display: none;}
+    img#impressao {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+
+
+    }
+    
+
+/*Configuração para grandes telas*/
+@media screen and (min-width: 1280px) {
+    body{
+        background-image: url('../imagem/back-tv.jpg');
+    }
+
+    img#fone{display:none;}
+    img#tablet{display: none;}
+    img#impressao{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+}
+
