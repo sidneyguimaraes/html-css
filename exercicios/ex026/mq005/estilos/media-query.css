@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    i#ihamburguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+    }
+
+    ul > li{
+        display: inline-block;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    main{
+        width: 800px; ;
+    }
+}
